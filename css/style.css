@@ -1,0 +1,140 @@
+@font-face {
+    font-family: frauncesbold;
+    src: url(Fraunces_72pt_SuperSoft-Bold.ttf);
+}
+
+@font-face {
+    font-family: mbold;
+    src: url(Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: mregular;
+    src: url(Montserrat-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin: 140px;
+    gap: none;
+}
+
+
+#image img {
+    height: 500px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#about {
+    border: 1px solid hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    padding-left: 18px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#about h1 {
+    font-family: mregular;
+    font-size: 12px;
+    color: hsl(228, 12%, 48%);
+    padding: 20px 0;
+}
+
+#about h2 {
+    font-family: frauncesbold;
+    font-size: 28px;
+    color: hsl(212, 21%, 14%);
+    padding-bottom: 16px;
+    width: 55%;
+}
+
+#about p {
+    font-family: mregular;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    width: 80%;
+}
+
+#price {
+    padding: 20px 0;
+}
+
+#price p {
+    font-family: frauncesbold;
+    font-size: 26px;
+    color: #2C5E1A;
+}
+
+#price span {
+    font-family: mregular;
+    font-size: 12px;
+    text-decoration: line-through;
+    padding-left: 14px;
+}
+
+a {
+    font-family: mbold;
+    font-size: 18px;
+    color: hsl(0, 0%, 100%);
+    background-color: #2C5E1A;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #2C5E1A;
+    border-radius: 15px;
+    width: 90%;
+
+}
+
+a:hover {
+    background-color: #1A4314;
+}
+
+@media screen and (max-width: 576px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+        gap: none;
+    }
+
+    #image img {
+        width: 400px;
+        border-radius: 15px;
+        height: 400px;
+    }
+
+    #about {
+        width: 400px;
+        border-radius: 15px;
+        padding-left: 34px;
+        height: 400px;
+    }
+
+    #about h2 {
+        width: 70%;
+    }
+
+    #about p {
+        width: 80%;
+    }
+}
